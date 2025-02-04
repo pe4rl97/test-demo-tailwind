@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #30e3ca;
+
+  --color-slate-gray: #333333;
+  --color-very-light-gray: #f8f9fa;
+
+  --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  --breakpoint-wide: 1440px;
+  --background-image-hero: url('./assets/hero-bg.jpg')
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@utility padding {
+  @apply sm:px-16 px-8 sm:py-24 py-12;
+}
+
+@utility padding-x {
+  @apply sm:px-16 px-8;
+}
+
+@utility padding-y {
+  @apply sm:py-24 py-12;
+}
+
+@utility padding-l {
+  @apply sm:ps-16 ps-8;
+}
+
+@utility padding-r {
+  @apply sm:pe-16 pe-8;
+}
+
+@utility padding-t {
+  @apply sm:pt-24 pt-12;
+}
+
+@utility padding-b {
+  @apply sm:pb-24 pb-12;
+}
