@@ -6,6 +6,7 @@
   --color-slate-gray: #333333;
   --color-very-light-gray: #f8f9fa;
 
+  --shadow-overflow-hidden: 0 10px 40px rgba(0, 0, 0, 0.1);
   --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
 
   --breakpoint-wide: 1440px;

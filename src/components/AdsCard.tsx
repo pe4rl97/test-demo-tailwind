@@ -3,7 +3,7 @@ import { Ad } from "../constants"
 
 const AdsCard = ({imageUrl, category, name, address}: Ad) => {
     return (
-        <div className="bg-white shadow-3xl rounded-lg">
+        <div className="bg-white shadow-overflow-hidden rounded-lg">
             <img 
                 src={imageUrl} 
                 alt={name} 

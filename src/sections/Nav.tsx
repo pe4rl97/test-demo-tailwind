@@ -27,7 +27,7 @@ const Nav = () => {
         <header className="absolute top-4 z-10 w-full max-lg:top-0">
             <nav className="flex justify-between items-center max-container bg-white p-4 rounded-lg">
                 <a href="/">
-                    <h1 className="text-2xl font-bold p-2">
+                    <h1 className="text-2xl font-bold p-2 text-black">
                         TEST<span className="text-primary"> DEMO</span>
                     </h1>
                 </a>
