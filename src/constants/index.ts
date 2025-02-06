@@ -1,5 +1,6 @@
 import { booksIcon, carsIcon, electronicsIcon, furnitureIcon, pizzaIcon, realEstateIcon } from "../assets/icons"
 import { ferrari, house, iphone, woodenFurniture } from "../assets/images"
+import { testimonial1, testimonial2, testimonial3, testimonial4 } from "../assets/testimonials"
 
 export interface Service {
     iconURL: string,
@@ -111,5 +112,80 @@ export const popularProducts: Product[] = [
         category: "Real Estate",
         name: "House with Swimming Pool",
         address: "West Orange, New York"
+    },
+]
+
+export interface Trending {
+    imageUrl: string,
+    category: string,
+    name: string,
+    address: string,
+}
+
+export const trendingToday: Trending[] = [
+    {
+        imageUrl: house,
+        category: "Real Estate",
+        name: "House with Swimming Pool",
+        address: "West Orange, New York"
+    },
+    {
+        imageUrl: ferrari,
+        category: "Cars & Vehicles",
+        name: "Red Luxury Car",
+        address: "West Orange, New York"
+    },
+    {
+        imageUrl: woodenFurniture,
+        category: "Furniture",
+        name: "Wooden Chair & Table",
+        address: "West Orange, New York"
+    },
+    {
+        imageUrl: house,
+        category: "Real Estate",
+        name: "House with Swimming Pool",
+        address: "West Orange, New York"
+    },
+    {
+        imageUrl: iphone,
+        category: "Electronics",
+        name: "iPhone X Gray",
+        address: "West Orange, New York"
+    },
+    {
+        imageUrl: woodenFurniture,
+        category: "Furniture",
+        name: "Wooden Chair & Table",
+        address: "West Orange, New York"
+    },
+]
+
+export interface Testimonial {
+    imageUrl: string,
+    name: string,
+    text: string,
+}
+
+export const testimonialDetails: Testimonial[] = [
+    {
+        imageUrl: testimonial1,
+        name: 'Layla Yoder',
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores cupiditate veritatis distinctio illum aliquam necessitatibus adipisci tenetur, dolores veniam sapiente neque in exercitationem nesciunt officia facilis culpa eum itaque?"
+    },
+    {
+        imageUrl: testimonial3,
+        name: 'Charley George',
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores cupiditate veritatis distinctio illum aliquam necessitatibus adipisci tenetur, dolores veniam sapiente neque in exercitationem nesciunt officia facilis culpa eum itaque?"
+    },
+    {
+        imageUrl: testimonial2,
+        name: 'Aria Meyer',
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores cupiditate veritatis distinctio illum aliquam necessitatibus adipisci tenetur, dolores veniam sapiente neque in exercitationem nesciunt officia facilis culpa eum itaque?"
+    },
+    {
+        imageUrl: testimonial4,
+        name: 'Ricky Parra',
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores cupiditate veritatis distinctio illum aliquam necessitatibus adipisci tenetur, dolores veniam sapiente neque in exercitationem nesciunt officia facilis culpa eum itaque?"
     },
 ]

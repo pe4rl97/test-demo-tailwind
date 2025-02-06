@@ -18,7 +18,7 @@ function App() {
                 <section className="padding">
                     <PopularProducts/>
                 </section>
-                <section className="padding-x py-13 bg-very-light-gray">
+                <section className="padding bg-very-light-gray">
                     <TrendingToday/>
                 </section>
                 <section className="padding">
