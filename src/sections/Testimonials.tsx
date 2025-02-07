@@ -25,7 +25,7 @@ const Testimonials = () => {
                 <hr className="w-20 mt-2.5 text-primary font-bold border-2 border-primary text-center"/>
                 <div className="flex items-center justify-between w-full mt-10">
                     <button 
-                        className="bg-gray-300 p-4 rounded-full text-white" 
+                        className="bg-gray-300 p-4 rounded-full text-white cursor-pointer" 
                         onClick={handlePrev}
                     >
                         <FaAngleLeft />
@@ -43,10 +43,10 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <button 
-                        className="bg-gray-300 p-4 rounded-full text-white" 
+                        className="bg-gray-300 p-4 rounded-full text-white cursor-pointer" 
                         onClick={handleNext}
                     >
-                        <FaAngleRight />
+                        <FaAngleRight/>
                     </button>
                 </div>
                 <div className="flex mt-15 space-x-3">

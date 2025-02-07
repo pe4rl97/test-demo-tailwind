@@ -4,10 +4,10 @@ const Hero = () => {
     return (
         <div className="flex justify-center bg-hero h-screen bg-cover bg-fixed">
             <div className="flex flex-col justify-center items-center">
-                <h1 className="text-white text-5xl text-center">Largest Classifieds In the World</h1>
+                <h1 className="text-white text-5xl text-center max-md:text-4xl">Largest Classifieds In the World</h1>
                 <h4 className="text-zinc-300 text-xl">You can buy, sell anything you want</h4>
                 <form>
-                    <div className="flex flex-col lg:flex-row mt-5 bg-very-light-gray/40 p-4 rounded-lg">
+                    <div className="flex flex-col lg:flex-row mt-5 bg-very-light-gray/40 p-4 rounded-lg max-md:w-100 max-lg:w-150">
                         <input
                             name="lookingFor"
                             placeholder="What are you looking for?"
@@ -35,7 +35,7 @@ const Hero = () => {
                             </select>
                         </div>
 
-                        <button className="bg-primary rounded w-35 max-lg:w-full max-lg:py-2 cursor-pointer">Search</button>
+                        <button className="bg-primary rounded w-35 max-lg:w-full max-lg:py-2 cursor-pointer hover:bg-hover-primary">Search</button>
                     </div>
 
                 </form>

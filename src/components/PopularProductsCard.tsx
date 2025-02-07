@@ -11,7 +11,7 @@ const PopularProductsCard = ({ imageUrl, category, name, address, extraHeight=fa
             <h3 className="text-white text-xl mt-3">{name}</h3>
             <div className="flex justify-between">
                 <h4 className="text-gray-300 text-sm">{address}</h4>
-                <span className="bg-white/40 rounded-full p-2"><FaHeart className="text-white"/></span>
+                <span className="bg-white/40 rounded-full p-2 cursor-pointer"><FaHeart className="text-white"/></span>
             </div>
         </div>
     );

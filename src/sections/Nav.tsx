@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
+    const navigate = useNavigate();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const dropdownRef = useRef<HTMLLIElement>(null);
@@ -44,7 +46,7 @@ const Nav = () => {
                 
                 {/* Desktop Menu */}
                 <ul className="hidden lg:flex flex-1 justify-end items-center gap-10">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="/#home">Home</a></li>
                     <li className="relative" ref={dropdownRef}>
                         <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex items-center py-2 px-3">
                             About
@@ -63,30 +65,63 @@ const Nav = () => {
                             </div>
                         )}
                     </li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/#blog">Blog</a></li>
+                    <li><a href="/#contact-us">Contact</a></li>
                     <li className="text-gray-300 select-none">|</li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Register</a></li>
-                    <li><button className="bg-primary p-2 px-8 rounded text-white">+ Test</button></li>
+                    <li><button className="bg-primary p-2 px-8 rounded text-white hover:bg-hover-primary" onClick={() => navigate('/uploader')}>+ Test</button></li>
                 </ul>
             </nav>
 
             {/* Offcanvas Menu */}
-            <div className={`fixed inset-0 bg-black/30 bg-opacity-50 z-20 transition-opacity ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`} onClick={() => setIsMenuOpen(false)}></div>
-            <div className={`fixed top-0 h-full w-64 bg-white shadow-md z-30 transform transition-transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            <div
+                className={`fixed bg-black/30 bg-opacity-50 z-20 transition-opacity ${
+                    isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+            ></div>
+
+            <div
+                className={`fixed top-0 right-0 h-full w-64 bg-white shadow-md z-30 transform transition-transform ${
+                    isMenuOpen ? "translate-x-0" : "translate-x-full"
+                }`}
+            >
                 <button className="p-4" onClick={() => setIsMenuOpen(false)}>
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                    <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        ></path>
                     </svg>
                 </button>
                 <ul className="flex flex-col gap-4 p-4">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><button className="bg-primary p-2 px-8 rounded text-white">+ Test</button></li>
+                    <li>
+                        <a href="/#home" onClick={() => setIsMenuOpen(false)}>Home</a>
+                    </li>
+                    <li>
+                        <a href="/#blog" onClick={() => setIsMenuOpen(false)}>Blog</a>
+                    </li>
+                    <li>
+                        <a href="/#contact-us" onClick={() => setIsMenuOpen(false)}>Contact</a>
+                    </li>
+                        <li>
+                    <a href="#" onClick={() => setIsMenuOpen(false)}>Login</a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={() => setIsMenuOpen(false)}>Register</a>
+                    </li>
+                    <li>
+                        <button className="bg-primary p-2 px-8 rounded text-white" onClick={() => navigate('/uploader')}>+ Test</button>
+                    </li>
                 </ul>
             </div>
         </header>

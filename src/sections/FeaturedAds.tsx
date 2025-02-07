@@ -40,10 +40,10 @@ const FeaturedAds = () => {
             </div>
 
             <div className="flex justify-center">
-                <button onClick={prevSlide} className="me-10 text-2xl text-slate-500">
+                <button onClick={prevSlide} className="me-10 text-2xl text-slate-500 cursor-pointer">
                     <FaAngleLeft />
                 </button>
-                <button onClick={nextSlide} className="text-2xl text-slate-500">
+                <button onClick={nextSlide} className="text-2xl text-slate-500 cursor-pointer">
                     <FaAngleRight />
                 </button>
             </div>

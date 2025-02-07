@@ -25,7 +25,7 @@ const TrendingCard = ({ imageUrl, category, name, address}: Trending) => {
                         <FaStar className="text-yellow-400 mt-1"/>
                         <FaStar className="text-yellow-400 mt-1"/>
                         <FaStar className="text-gray-500 mt-1"/>
-                        <p className="text-slate-500 ms-2">{'(3 Reviews)'}</p>
+                        <p className="text-slate-500 ms-2 max-lg:mt-1 max-lg:text-[11px]">{'(3 Reviews)'}</p>
                     </div>
                 </div>
             </div>

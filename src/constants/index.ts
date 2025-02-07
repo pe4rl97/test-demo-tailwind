@@ -1,3 +1,4 @@
+import { blog1 } from "../assets/blogs"
 import { booksIcon, carsIcon, electronicsIcon, furnitureIcon, pizzaIcon, realEstateIcon } from "../assets/icons"
 import { ferrari, house, iphone, woodenFurniture } from "../assets/images"
 import { testimonial1, testimonial2, testimonial3, testimonial4 } from "../assets/testimonials"
@@ -187,5 +188,41 @@ export const testimonialDetails: Testimonial[] = [
         imageUrl: testimonial4,
         name: 'Ricky Parra',
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores cupiditate veritatis distinctio illum aliquam necessitatibus adipisci tenetur, dolores veniam sapiente neque in exercitationem nesciunt officia facilis culpa eum itaque?"
+    },
+]
+
+export interface Blog {
+    imageUrl: string,
+    title: string,
+    author: string,
+    date: string,
+    category: string,
+    text: string
+}
+
+export const blogs: Blog[] = [
+    {
+        imageUrl: blog1,
+        title: "Many People Selling Online",
+        author: "Mark Spiker",
+        date: "Jan 18, 2019",
+        category: "News",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure, illum beatae necessitatibus cum exercitationem delectus nulla at saepe voluptatibus aliquid sequi adipisci consectetur blanditiis."
+    },
+    {
+        imageUrl: blog1,
+        title: "Many People Selling Online",
+        author: "Mark Spiker",
+        date: "Jan 18, 2019",
+        category: "News",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure, illum beatae necessitatibus cum exercitationem delectus nulla at saepe voluptatibus aliquid sequi adipisci consectetur blanditiis."
+    },
+    {
+        imageUrl: blog1,
+        title: "Many People Selling Online",
+        author: "Mark Spiker",
+        date: "Jan 18, 2019",
+        category: "News",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure, illum beatae necessitatibus cum exercitationem delectus nulla at saepe voluptatibus aliquid sequi adipisci consectetur blanditiis."
     },
 ]
